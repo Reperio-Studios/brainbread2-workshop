@@ -358,9 +358,9 @@ namespace workshopper
                     return;
                 }
 
-                if (fileSize > 67108864)
+                if (fileSize > 104857600)
                 {
-                    utils.ShowWarningDialog("Content size is too big, 64MB is max!", null, true);
+                    utils.ShowWarningDialog("Content size is too big, 100MB is max!", null, true);
                     return;
                 }
             }
@@ -374,9 +374,9 @@ namespace workshopper
                     return;
                 }
 
-                if (fileSize > 1048576)
+                if (fileSize > 5089488)
                 {
-                    utils.ShowWarningDialog("Image size is too big, 1MB is max!", null, true);
+                    utils.ShowWarningDialog("Image size is too big, 5MB is max!", null, true);
                     return;
                 }
             }
