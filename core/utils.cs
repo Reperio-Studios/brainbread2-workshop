@@ -70,7 +70,7 @@ namespace workshopper.core
             }
         }
 
-        public static string[] GetAvailableTags = { "Classic", "Elimination", "Arena", "Weapons", "Survivors", "Sounds", "Textures", "Other" };
+        public static string[] GetAvailableTags = { "Objective", "Elimination", "Arena", "Weapons", "Survivors", "Sounds", "Textures", "Other" };
         public static string[] GetContestTags = { "Christmas", "Halloween" };
         public static void AddContestItems(ComboBox box)
         {

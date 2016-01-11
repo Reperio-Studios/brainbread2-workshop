@@ -70,7 +70,7 @@ namespace workshopper
 
             for (int i = 0; i < pszTagList.Count(); i++)
             {
-                if (pszTagList[i] == "Classic")
+                if (pszTagList[i] == "Objective")
                     m_pCheckBox[0].ActiviateItem(true);
 
                 else if (pszTagList[i] == "Elimination")
