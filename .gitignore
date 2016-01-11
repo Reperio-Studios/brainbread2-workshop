@@ -11,6 +11,7 @@
 *.exp
 *.ilk
 *.lastbuildstate
+workshopper_log.txt
 vc100.pdb
 ipch
 *.sdf
@@ -25,3 +26,5 @@ ipch
 /obj/Release
 /obj/Debug
 /bin/Debug
+/bin/Debug/assets/workshopper/addons
+/bin/Release/assets/workshopper/addons
