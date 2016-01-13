@@ -211,7 +211,7 @@ namespace workshopper.controls
             }
 
             e.Graphics.DrawString(pszName, new Font("Times New Roman", 20, FontStyle.Bold), new SolidBrush(Color.White), new Rectangle(Height + 2, 1, Width - Height - 2, 30), formatter);
-            e.Graphics.DrawString(pszDescription, new Font("Times New Roman", 10, FontStyle.Regular), new SolidBrush(Color.White), new Rectangle(Height + 3, 33, Width - Height - 3, 20), formatter);
+            e.Graphics.DrawString(pszDescription, new Font("Times New Roman", 10, FontStyle.Regular), new SolidBrush(Color.White), new Rectangle(Height + 3, 33, Width - Height - 3, 15), formatter);
 
             formatter.LineAlignment = StringAlignment.Center;
             formatter.Alignment = StringAlignment.Far;
