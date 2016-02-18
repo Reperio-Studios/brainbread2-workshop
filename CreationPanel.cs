@@ -1,4 +1,10 @@
-﻿using Steamworks;
+﻿//=========       Copyright © Reperio Studios 2013-2016 @ Bernt Andreas Eide!       ============//
+//
+// Purpose: UGC Creation/Updating Form
+//
+//=============================================================================================//
+
+using Steamworks;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -70,7 +76,7 @@ namespace workshopper
 
             for (int i = 0; i < pszTagList.Count(); i++)
             {
-                if (pszTagList[i] == "Objective")
+                if (pszTagList[i] == "Classic")
                     m_pCheckBox[0].ActiviateItem(true);
 
                 else if (pszTagList[i] == "Elimination")
@@ -364,6 +370,12 @@ namespace workshopper
                 return;
             }
 
+            if (m_pDescription.Text.Length > 1000)
+            {
+                utils.ShowWarningDialog("The description is more than 1000 characters long!", null, true);
+                return;
+            }
+
             if (!string.IsNullOrEmpty(pszContentPath))
             {
                 ulong fileSize = utils.GetSizeOfContent(pszContentPath);
@@ -389,9 +401,9 @@ namespace workshopper
                     return;
                 }
 
-                if (fileSize > 5089488)
+                if (fileSize > 1048576)
                 {
-                    utils.ShowWarningDialog("Image size is too big, 5MB is max!", null, true);
+                    utils.ShowWarningDialog("Image size is too big, 1MB is max!", null, true);
                     return;
                 }
             }
